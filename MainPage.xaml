@@ -1,0 +1,85 @@
+﻿ // ========================================================
+// Disciplina: CBTPRDM - Programação de Dispositivos Móveis
+// Trabalho Prático 01
+// Dupla: Laryssa Barbossa e Isabela Salgueiro
+// ========================================================<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TP01_WEB.MainPage"
+             BackgroundColor="Black">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="30" VerticalOptions="Center">
+
+            <!-- Título -->
+            <Label Text="Aplicação Teste"
+                   TextColor="White"
+                   FontSize="26"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,10"/>
+
+            <!-- Campos ID e Pass -->
+            <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="Auto,*" RowSpacing="15" ColumnSpacing="10">
+                <Label Text="ID:" 
+                       TextColor="White" 
+                       FontSize="20" 
+                       FontAttributes="Bold" 
+                       Grid.Row="0" Grid.Column="0" 
+                       VerticalOptions="Center" />
+
+                <Border Grid.Row="0" Grid.Column="1" Stroke="White" StrokeThickness="1">
+                    <Entry x:Name="txtId" 
+                           TextColor="White" 
+                           BackgroundColor="Black" />
+                </Border>
+
+                <Label Text="Pass" 
+                       TextColor="White" 
+                       FontSize="20" 
+                       FontAttributes="Bold" 
+                       Grid.Row="1" Grid.Column="0" 
+                       VerticalOptions="Center" />
+
+                <Border Grid.Row="1" Grid.Column="1" Stroke="White" StrokeThickness="1">
+                    <Entry x:Name="txtPass" 
+                           IsPassword="True" 
+                           TextColor="White" 
+                           BackgroundColor="Black" />
+                </Border>
+            </Grid>
+
+            <!-- Espaçador visual -->
+            <BoxView HeightRequest="40" Color="Transparent" />
+
+            <!-- Botões -->
+            <VerticalStackLayout Spacing="15" WidthRequest="200" HorizontalOptions="Center">
+                <Button x:Name="btnOk"
+                        Text="OK"
+                        TextColor="DarkRed"
+                        BackgroundColor="LightGray"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        Clicked="OnOkClicked" />
+
+                <Button x:Name="btnLimpar"
+                        Text="Limpar"
+                        TextColor="DarkRed"
+                        BackgroundColor="LightGray"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        Clicked="OnLimparClicked" />
+
+                <Button x:Name="btnCreditos"
+                        Text="Créditos"
+                        TextColor="DarkRed"
+                        BackgroundColor="LightGray"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        Clicked="OnCreditosClicked" />
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

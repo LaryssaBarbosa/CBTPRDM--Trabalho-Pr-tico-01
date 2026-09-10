@@ -1,7 +1,7 @@
  // ========================================================
 // Disciplina: CBTPRDM - Programação de Dispositivos Móveis
 // Trabalho Prático 01
-// Dupla: Laryssa Barbossa e Isabela Salgueiro
+// Dupla: Laryssa Barbosa e Isabela Salgueiro
 // ========================================================<?xml version="1.0" encoding="UTF-8" ?>
 <Shell
     x:Class="TP01_WEB.AppShell"
